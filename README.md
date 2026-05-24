@@ -1,32 +1,67 @@
-# 🚀 AeroClick Ultra v5.0
+<div align="center">
 
-> AI destekli ultra düşük gecikmeli el hareketi ile bilgisayar kontrol sistemi.  
-> Fare hareketi, tıklama, sürükleme, scroll ve ses kontrolünü yalnızca el hareketleriyle yönetin.
+# 🚀 AeroClick Ultra
 
----
+### Yapay Zekâ Destekli El Hareketi ile Bilgisayar Kontrol Sistemi
 
-## ✨ Özellikler
+<img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
+<img src="https://img.shields.io/badge/OpenCV-Görüntü%20İşleme-green?style=for-the-badge&logo=opencv">
+<img src="https://img.shields.io/badge/MediaPipe-AI%20Tracking-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows">
 
-- 🖐️ Gerçek zamanlı el takibi
-- ⚡ Ultra düşük gecikme
-- 🎯 EMA Smooth Filter ile akıcı imleç
-- 🖱️ Sol tık / Sağ tık
-- ✋ Sürükle-bırak desteği
-- 📜 El hareketi ile scroll
-- 🔊 Ses seviyesi kontrolü
-- 😴 Yumruk jesti ile uyku modu
-- 🔔 Windows sesli bildirimleri
-- 🖥️ Sistem tepsisi desteği
-- 🧠 MediaPipe AI Hand Tracking
-- 🚀 Windows API hızlandırmalı mouse kontrolü
+<br><br>
+
+> Bilgisayarınızı sadece el hareketleriyle kontrol edin.  
+> Yapay zekâ destekli jest algılama ve ultra düşük gecikmeli takip sistemi.
+
+</div>
 
 ---
 
-# 📸 Demo
+# ✨ Özellikler
 
-<p align="center">
-  <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" width="700">
-</p>
+## 🖐️ Gerçek Zamanlı El Takibi
+MediaPipe destekli gelişmiş yapay zekâ el landmark sistemi.
+
+## ⚡ Ultra Düşük Gecikme
+Optimize edilmiş işlem yapısıyla ultra akıcı imleç deneyimi.
+
+## 🎯 Akıllı İmleç Yumuşatma
+Dynamic EMA Filter sayesinde profesyonel seviyede akıcı hareket.
+
+## 🖱️ Tam Mouse Kontrolü
+
+- Sol Tık
+- Sağ Tık
+- Sürükle & Bırak
+- Hassas İmleç Hareketi
+
+## 📜 Hareket ile Scroll
+El hareketleriyle dikey kaydırma kontrolü.
+
+## 🔊 Ses Kontrolü
+Parmak hareketleriyle sistem sesini artırıp azaltma.
+
+## 😴 Akıllı Uyku Modu
+Yumruk jesti ile sistemi aktif/pasif hale getirme.
+
+## 🖥️ Sistem Tepsisi Desteği
+Arka planda çalışan tray destekli yapı.
+
+## 🔔 Sesli Bildirimler
+Windows sistem sesleriyle geri bildirim.
+
+---
+
+# 🎮 Hareket Kontrolleri
+
+| Hareket | İşlev |
+|---|---|
+| 👆 İşaret + Başparmak | Sol Tık / Sürükleme |
+| 🤏 Serçe + Başparmak | Sağ Tık |
+| 🤌 Yüzük + Başparmak | Scroll |
+| ✌️ Orta Parmak + Başparmak | Ses Kontrolü |
+| ✊ Yumruk (1.5 sn) | Uyku Modu |
 
 ---
 
@@ -40,30 +75,18 @@
 | Pynput | Mouse & klavye kontrolü |
 | PyStray | Sistem tepsisi |
 | Pillow | Tray ikon oluşturma |
-| WinSound | Windows ses sistemi |
 | ctypes | Windows API erişimi |
-
----
-
-# 🎮 Hareket Kontrolleri
-
-| Hareket | İşlev |
-|---|---|
-| 👆 İşaret + Başparmak | Sol tık / sürükleme |
-| 🤏 Serçe + Başparmak | Sağ tık |
-| 🤌 Yüzük + Başparmak | Scroll |
-| ✌️ Orta Parmak + Başparmak | Ses kontrolü |
-| ✊ Yumruk (1.5 sn) | Uyku modu aç/kapat |
+| WinSound | Sesli bildirim sistemi |
 
 ---
 
 # ⚙️ Kurulum
 
-## 1️⃣ Projeyi Klonla
+## 1️⃣ Repoyu Klonla
 
 ```bash
-git clone https://github.com/kullaniciadi/AeroClickUltra.git
-cd AeroClickUltra
+git clone https://github.com/ardairmk55/AeroClick.git
+cd AeroClick
 ```
 
 ---
@@ -76,7 +99,7 @@ pip install opencv-python mediapipe pynput pystray pillow
 
 ---
 
-## 3️⃣ Programı Başlat
+## 3️⃣ Programı Çalıştır
 
 ```bash
 python main.py
@@ -84,20 +107,10 @@ python main.py
 
 ---
 
-# 🖥️ Sistem Gereksinimleri
-
-- Windows 10 / 11
-- Python 3.10+
-- Webcam
-- Minimum 4 GB RAM
-- Modern işlemci önerilir
-
----
-
 # 📂 Proje Yapısı
 
 ```text
-AeroClickUltra/
+AeroClick/
 │
 ├── main.py
 ├── README.md
@@ -107,27 +120,31 @@ AeroClickUltra/
 
 ---
 
-# ⚡ Performans Optimizasyonları
+# 🚀 Performans Optimizasyonları
 
-## 🚀 Ultra Hızlı İşlemler
-
-- Windows API ile direkt ekran çözünürlüğü alma
+- Dynamic EMA Motion Filter
+- Windows API hızlandırması
+- Düşük CPU kullanımı
+- Deadzone filtreleme
 - Inline koordinat hesaplama
-- EMA filtreleme
-- CPU kullanım optimizasyonu
-- Gereksiz frame işlemlerinin azaltılması
+- Optimize edilmiş jest algılama
+- Dinamik hareket ölçekleme
 
 ---
 
-# 🧠 Akıllı Hareket Algoritması
+# 🧠 Çalışma Mantığı
 
-Sistem:
-
-- El boyutunu dinamik analiz eder
-- Parmak mesafelerini oransal hesaplar
-- Yanlış tıklamaları filtreler
-- Hareketleri yumuşatır
-- Gecikmeyi minimuma indirir
+```text
+Webcam Görüntüsü
+        ↓
+MediaPipe El Takibi
+        ↓
+Landmark Analizi
+        ↓
+Jest Algılama
+        ↓
+Mouse / Klavye Komutları
+```
 
 ---
 
@@ -135,46 +152,62 @@ Sistem:
 
 ## 🎯 Dynamic EMA Filter
 
-İmleç hareketlerini profesyonel düzeyde akıcı hale getirir.
+İmleç hareketlerini ultra akıcı hale getirir.
 
 ## 🧠 Adaptive Gesture Detection
 
 El boyutuna göre otomatik hassasiyet ayarı yapar.
 
-## 😴 Smart Sleep Mode
+## ⚡ Yüksek Performanslı Takip
 
-Yanlış hareketleri engellemek için yumruk jesti ile sistemi pasif hale getirir.
+Düşük gecikmeli ve hızlı tepki veren sistem.
 
----
+## 😴 Smart Sleep System
 
-# 📷 Çalışma Mantığı
-
-```text
-Kamera → MediaPipe → Landmark Analizi → Jest Algılama → Mouse/Keyboard Kontrolü
-```
+Yanlış hareketleri önlemek için akıllı pasif mod sistemi.
 
 ---
 
-# 📌 Gelecek Güncellemeler
+# 🖥️ Sistem Gereksinimleri
 
-- 🎮 Oyun modu
-- 🖥️ Çoklu monitör desteği
-- 🤖 AI gesture learning
-- 🌙 Dark mode arayüz
-- 📊 FPS göstergesi
-- 🧠 Custom gesture training
-- ☁️ Cloud profile sync
+- Windows 10 / 11
+- Python 3.10+
+- Webcam
+- Minimum 4GB RAM
+- Modern işlemci önerilir
 
 ---
 
-# 🛡️ Güvenlik
+# 📸 Önizleme
 
-Bu proje:
+<div align="center">
 
-- Veri toplamaz
-- Kamera görüntüsünü kaydetmez
-- İnternet bağlantısı gerektirmez
-- Tamamen lokal çalışır
+<img src="https://raw.githubusercontent.com/google/mediapipe/master/docs/images/hand_landmarks.png" width="700">
+
+</div>
+
+---
+
+# 📌 Planlanan Güncellemeler
+
+- 🎮 Oyun Modu
+- 🖥️ Çoklu Monitör Desteği
+- 🤖 Özel Yapay Zekâ Jest Eğitimi
+- 🌙 Modern Arayüz Sistemi
+- 📊 FPS Göstergesi
+- ☁️ Bulut Profil Sistemi
+- 🧠 Kişisel Jest Tanımlama
+
+---
+
+# 🛡️ Gizlilik
+
+AeroClick tamamen lokal çalışır.
+
+- ❌ Veri toplamaz
+- ❌ Kamera kaydı yapmaz
+- ❌ İnternet bağlantısı gerektirmez
+- ✅ Tamamen çevrimdışı çalışır
 
 ---
 
@@ -182,9 +215,9 @@ Bu proje:
 
 ## Arda Irmak
 
-💻 Software Developer & Full Stack Developer
+### Software Developer & Full Stack Developer
 
-### Bildiği Teknolojiler
+Bildiği Teknolojiler:
 
 - Python
 - Flask
@@ -195,13 +228,14 @@ Bu proje:
 
 ---
 
-# ⭐ Katkıda Bulun
+# ⭐ Destek
 
-Pull request gönderebilir veya issue açabilirsiniz.
+Projeyi beğendiysen:
 
-```bash
-fork -> develop -> commit -> pull request
-```
+- ⭐ Repo’ya yıldız vermeyi unutma
+- 🍴 Fork oluştur
+- 🚀 Katkıda bulun
+- 🧠 Fikirlerini paylaş
 
 ---
 
@@ -211,16 +245,10 @@ MIT License
 
 ---
 
-# 💙 Destek
+<div align="center">
 
-Projeyi beğendiysen:
+# 💙 AeroClick Ultra
 
-⭐ Repo’ya yıldız vermeyi unutma  
-🚀 Geliştirmeye katkı sağla  
-🧠 Yeni özellik önerileri gönder  
+### “Bilgisayarını hareketlerinle kontrol et.”
 
----
-
-# 🖥️ AeroClick Ultra
-
-> “Control your computer with nothing but motion.” ✨
+</div>
